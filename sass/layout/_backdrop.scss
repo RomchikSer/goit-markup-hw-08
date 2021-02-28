@@ -1,0 +1,205 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: var(--box-shaden-modal);
+    border-radius: 4px;
+  }
+  .modal-btn-close {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+  }
+  .modal-close-svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--over-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+
+      .modal-btn-close:hover &,
+      .modal-btn-close:focus & {
+      fill: var(--focus-text-color);
+    }
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+  }
+.contact-title {
+    margin-bottom: 12px;
+    margin-top: 2px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--web-text-color);
+  }
+.contacts-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+    outline: none;
+    border-color: var(--focus-text-color);
+  }
+}
+  
+  .user-name-title {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--tel-mail-text-color);
+  }
+.modal-form-input-wrap {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+  .modal-form-massage {
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border-color:var(--focus-text-color);
+    }
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.167;
+      letter-spacing: 0.01em;
+      
+      color: rgba(117, 117, 117, 0.5); 
+    }
+  }
+  
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--web-text-color);
+
+    .contacts-form-input:focus+ & ,
+    .contacts-form-input:hover+ & {
+    fill: var(--focus-text-color);
+  }
+}
+
+.modal-form-lable-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  margin-bottom: 30px;
+
+ &::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    outline: 1px solid #212121;
+    margin-right: 7px;
+    border-radius: 2px;
+ }
+    .modal-check-policy:checked + &::before {
+      background-image: url(../photo/photo_icon/icon_check.svg);
+      outline: none;
+    }
+
+  .modal-check-policy:focus + &::before {
+    outline: 2px solid var(--focus-text-color);
+    
+  }
+}
+
+.policy-link {
+    color: var(--focus-text-color);
+    margin-left: 5px;
+}
+.modal-form-button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 30PX;
+    min-width: 200px;
+    height: 50px;
+    cursor: pointer;
+    align-self: center;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    color: var(--secondary-text-color);
+    background: var(--focus-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+
+    &:focus,
+    &:hover {
+  background-color: var(--color-hero-button);
+  }
+}
+

@@ -1,0 +1,55 @@
+.hero {
+    padding: 200px 0px;
+    text-align: center;
+  padding: 200px 0px;
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to right,
+      var(--hero-overlay),
+      var(--hero-overlay)
+    ),
+    url('../photo/photo_icon/bg_hero.png');
+    background-color: var(--background-hero);
+}
+.hero-title {
+    margin-bottom: 30px;
+    height: 120px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    color:var(--secondary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing:var(--letter-spacing-priority);
+    text-transform: uppercase;
+}
+.hero-bt {
+    background-color: var(--focus-text-color);
+    color: var(--secondary-text-color);
+    letter-spacing: var(--letter-spacing-priority);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 30px;
+    min-width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+    background: var(--color-hero-button);
+    }
+}

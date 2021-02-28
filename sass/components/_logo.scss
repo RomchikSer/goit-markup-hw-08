@@ -1,0 +1,26 @@
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.logo-studio {
+    color: var(--over-text-color);
+    font-family: raleway, sans-serif;
+    font-size:26px ;
+    line-height: 1.17;
+
+    &:focus{
+        color: var(--focus-text-color); 
+    }
+
+    .footer & {
+        margin-bottom: 20px;
+        display: inline-block;
+        margin-right: 0px;
+        color: var(--secondary-text-color);
+    }
+}
+
+
+.logo-web-color {
+    color: var(--focus-text-color);
+}

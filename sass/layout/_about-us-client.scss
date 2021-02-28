@@ -1,0 +1,60 @@
+.client-title {
+    margin-bottom: 50px;
+}
+.client-list {
+    display: flex;
+}
+.client-link {
+    display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primery-icons-color);
+  border: 1px solid var(--primery-icons-color);
+  border-radius: 4px;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--focus-text-color);
+    border-color: var(--focus-text-color);
+  }
+}
+.client-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.icon-logo-1 {
+    width: 44px;
+    height: 49px;
+  }
+  
+  .icon-logo-2 {
+    width: 40px;
+    height: 52px;
+  }
+  
+  .icon-logo-3 {
+    width: 41px;
+    height: 43px;
+  }
+  
+  .icon-logo-4 {
+    width: 80px;
+    height: 42px;
+  }
+  
+  .icon-logo-5 {
+    width: 59px;
+    height: 47px;
+  }
+  
+  .icon-logo-6 {
+    width: 88px;
+    height: 45px;
+  }

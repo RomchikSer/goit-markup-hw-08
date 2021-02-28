@@ -1,0 +1,32 @@
+.work-list .work-item {
+    position: relative;
+    display: block;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+       }
+}
+.work-list {
+ display: flex;
+}
+
+.title-work{
+    margin-bottom: 50px;
+}
+.work-list .text_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    min-height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    background-color:var(--color-text-work);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
