@@ -629,6 +629,12 @@ img {
   padding: 94px 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding: 94px 15px;
+  }
+}
+
 .portfolio-header {
   border-bottom: var(--portfolio-header-line);
 }
@@ -700,6 +706,16 @@ img {
 
 .main-list .main-list-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .main-list-title {
