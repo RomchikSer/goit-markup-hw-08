@@ -12,15 +12,61 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header portfolio-header">
+    <header class="header index-header">
         <div class="container navigation">
           <nav class="navigation">
             <a href="./index.html" class="logo-studio">
                 <span lang="en" class="logo-web-color">Web</span>Studio
             </a>
+            <button 
+            type="button" 
+            class="mobile-menu" 
+            aria-expanded="false" 
+            aria-controls="menu-container"
+            data-menu-button >
+            <svg class="mobile-menu-burger" aria-label="раскрываюшейся окно моб.">
+                <use class="burger-icon" href="./photo/photo_icon/sprite5.svg#icon-burger-mobile"></use>
+                <use class="burger-close-icon" href="./photo/photo_icon/sprite5.svg#close-burger"></use>
+            </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <ul class="menu-burger-list">
+                <li class="menu-burger-item item">
+                    <a href="./index.html" class="menu-burger-link">Студия</a>
+                </li>
+                <li class="menu-burger-item item">
+                    <a href="./portfolio.html" class="menu-burger-link mobile-current">Портфолио</a>
+                </li>
+                <li class="menu-burger-item item">
+                    <a href="#" class="menu-burger-link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-item item">
+                    <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
+                </li>
+                <li class="mobile-contacts-item item">
+                    <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="social-nav">
+                <li class="social-list">
+                    <a href="#" class="social-link">Instagram</a>
+                </li>
+                <li class="social-list">
+                    <a href="#" class="social-link">Twitter</a>
+                </li>
+                <li class="social-list">
+                    <a href="#" class="social-link">Facebook</a>
+                </li>
+                <li class="social-list">
+                    <a href="#" class="social-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
            <ul class="nav-web">
                <li class="nav-list">
-                   <a class="nav-link" href="./index.html" >Студия</a>
+                   <a class="nav-link " href="./index.html" >Студия</a>
                 </li>
                <li class="nav-list">
                    <a class="nav-link current" href="./portfolio.html">Портфолио</a>
@@ -38,8 +84,7 @@
                     <use href="./photo/photo_icon/sprite.svg#icon-envelope-hover"> </use>
                  </svg>
                 info@devstudio.com
-            </a>
-                   
+            </a>    
                 </li>
             <li class="header-contacts-tel item">
                     <a href="tel:+380961111111" 
