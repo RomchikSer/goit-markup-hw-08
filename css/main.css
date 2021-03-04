@@ -310,31 +310,76 @@ img {
   height: 16px;
 }
 
+.hero-title {
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  font-size: 26px;
+  line-height: 1.615;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
-  padding: 200px 0px;
-  text-align: center;
-  padding: 200px 0px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../photo/photo_icon/bg_hero.png");
-  background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../photo/photo_icon/bg_hero.png");
-  background-color: var(--background-hero);
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("");
+  background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("");
+  background-color: #c4c4c4;
 }
 
-.hero-title {
-  margin-bottom: 30px;
-  height: 120px;
-  width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-  color: var(--secondary-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: var(--letter-spacing-priority);
-  text-transform: uppercase;
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../images/hero/mobile-hero@2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../images/hero/mobile-hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-color: #c4c4c4;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../images/hero/tablet-hero.jpg");
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../images/hero/tablet-hero.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../images/hero/tablet-hero@2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../images/hero/tablet-hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px;
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../images/hero/desctop-hero.jpg");
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../images/hero/desctop-hero.jpg");
+    background-color: #c4c4c4;
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.364;
+    max-width: 696px;
+    max-height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../images/hero/desctop-hero@2x.jpg");
+    background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../images/hero/desctop-hero@2x.jpg");
+  }
 }
 
 .hero-bt {

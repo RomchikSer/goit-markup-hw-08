@@ -1,34 +1,142 @@
-.hero {
-    padding: 200px 0px;
-    text-align: center;
-  padding: 200px 0px;
+// .hero {
+//     padding: 200px 0px;
+//     text-align: center;
+//   padding: 200px 0px;
 
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-  background-size: cover;
+//   max-width: 1600px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   background-size: cover;
 
-  background-image: linear-gradient(
-      to right,
-      var(--hero-overlay),
-      var(--hero-overlay)
-    ),
-    url('../photo/photo_icon/bg_hero.png');
-    background-color: var(--background-hero);
-}
+//   background-image: linear-gradient(
+//       to right,
+//       var(--hero-overlay),
+//       var(--hero-overlay)
+//     ),
+//     url('../photo/photo_icon/bg_hero.png');
+//     background-color: var(--background-hero);
+// }
+// .hero-title {
+//     margin-bottom: 30px;
+//     height: 120px;
+//     width: 696px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     color:var(--secondary-text-color);
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing:var(--letter-spacing-priority);
+//     text-transform: uppercase;
+// }
 .hero-title {
+    color: var(--secondary-text-color);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.615;
+    text-transform: uppercase;
+  
     margin-bottom: 30px;
-    height: 120px;
-    width: 696px;
+    max-width: 360px;
+  
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
     margin-right: auto;
     margin-left: auto;
-    color:var(--secondary-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing:var(--letter-spacing-priority);
-    text-transform: uppercase;
-}
+    background-size: cover;
+    text-align: center;
+  
+    background-image: linear-gradient(
+        to right,
+        var(--hero-overlay),
+        var(--hero-overlay)
+      ),
+      url('../photo/mobile/header-mobile/header-mobile.png')
+    background-color: #c4c4c4;
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url('../photo/mobile/header-mobile/header-mobile@2x.png');
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero {
+      max-width: 768px;
+      background-color: #c4c4c4;
+  
+      background-image: linear-gradient(
+          to right,
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url('../photo/tablet/header-tablet/header-tablet.png');
+    }
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+            to right,
+            var(--hero-overlay),
+            var(--hero-overlay)
+          ),
+          url('../photo/tablet/header-tablet/header-tablet@2x.png');
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .hero {
+      padding: 200px 0px;
+      max-width: 1600px;
+  
+      background-image: linear-gradient(
+          to right,
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url('../photo/dekstop/header-dekstop/hero-dekstop.png')
+      background-color: #c4c4c4;
+    }
+  
+    .hero-title {
+      font-size: 44px;
+      line-height: 1.364;
+      max-width: 696px;
+      max-height: 120px;
+    }
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+            to right,
+            var(--hero-overlay),
+            var(--hero-overlay)
+          ),
+          url('../photo/dekstop/header-dekstop/hero-dekstop@2x.png');
+      }
+    }
+  }
+  
 .hero-bt {
     background-color: var(--focus-text-color);
     color: var(--secondary-text-color);
