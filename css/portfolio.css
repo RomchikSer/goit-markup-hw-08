@@ -263,28 +263,28 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .features-list .item:not(:last-child) {
+  .uniqum-list-item .item:not(:last-child) {
     margin-bottom: 30px;
   }
   .team-list > .item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .portfolio-filters .item:nth-child(-n + 3) {
+  .portfolio-filter .item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
-  .portfolio-list .item:not(:last-child) {
+  .main-list .item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .features-list .item {
+  .uniqum-list-item .item {
     width: 354px;
   }
-  .features-list .item:nth-last-child(2n) {
+  .uniqum-list-item .item:nth-last-child(2n) {
     margin-right: 30px;
   }
-  .features-list .item:not(:nth-last-child(-n + 2)) {
+  .uniqum-list-item .item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
   .team-list > .item:nth-last-child(2n) {
@@ -293,38 +293,38 @@ img {
   .team-list > .item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
-  .portfolio-list .item {
+  .main-list .item {
     width: 354px;
   }
-  .portfolio-list .item:not(:nth-child(2n)) {
+  .main-list .item:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .portfolio-list .item:not(:last-child) {
+  .main-list .item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts .item:not(:last-child) {
+  .mobile-contacts-list .item:not(:last-child) {
     margin-right: 50px;
   }
-  .features-list .item {
+  .uniqum-list-item .item {
     width: 270px;
   }
-  .features-list .item:not(:last-child) {
+  .uniqum-list-item .item:not(:last-child) {
     margin-right: 30px;
   }
-  .teame-list .item {
+  .team-list .item {
     width: 270px;
     height: 428px;
   }
-  .portfolio-list .item {
+  .main-list .item {
     width: 370px;
   }
-  .portfolio-list .item:not(:nth-child(3n)) {
+  .main-list .item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
-  .portfolio-list .item:not(:nth-last-child(-n + 3)) {
+  .main-list .item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
   }
 }
