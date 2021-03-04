@@ -121,9 +121,9 @@
     line-height: 1.14;
     text-transform: uppercase;
 }
-  .footer-modal-wrapper {
-      margin-left: auto;
-  }
+  // .footer-modal-wrapper {
+  //     margin-left: auto;
+  // }
   .footer-form {
     position: relative;
   }
@@ -199,6 +199,38 @@
     .footer-modal-input {
       margin-bottom: 0;
       margin-right: 12px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-form {
+      display: block;
+    }
+  
+    .footer-modal-wrapper {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .footer {
+      text-align: left;
+    }
+  
+    .footer-address {
+      margin-bottom: 0;
+      margin-right: 70px;
+    }
+  
+    .social-footer-container {
+      margin-bottom: 0;
+    }
+  
+    .footer-modal-wrapper {
+      margin-left: auto;
+    }
+  
+    .footer-form {
+      display: flex;
     }
   }
   
