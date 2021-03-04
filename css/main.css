@@ -38,6 +38,7 @@
 }
 
 body {
+  background-color: var(--secondary-text-color);
   color: var(--web-text-color);
   letter-spacing: var(--letter-spacing);
   font-family: Roboto, sans-serif;
