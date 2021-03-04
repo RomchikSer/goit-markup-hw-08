@@ -38,7 +38,6 @@
 }
 
 body {
-  background-color: var(--secondary-text-color);
   color: var(--web-text-color);
   letter-spacing: var(--letter-spacing);
   font-family: Roboto, sans-serif;
@@ -484,6 +483,14 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .nav-web {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -504,6 +511,14 @@ img {
     position: absolute;
     left: 0px;
     bottom: 0px;
+  }
+  .social-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .social-nav.social-list:not(:last-child) {
+    margin-right: 20px;
   }
   .header-contacts {
     margin-left: auto;
