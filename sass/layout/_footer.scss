@@ -138,6 +138,9 @@
     box-sizing: border-box;
     background-color: transparent;
     border-radius: 4px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
 
     &::placeholder {
         font-size: 16px;
@@ -178,6 +181,24 @@
 
     &:active {
         outline: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .footer-modal-input {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-modal-input {
+      width: 450px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .footer-modal-input {
+      margin-bottom: 0;
+      margin-right: 12px;
     }
   }
   
