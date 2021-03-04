@@ -58,7 +58,7 @@
         var(--hero-overlay),
         var(--hero-overlay)
       ),
-      url('../photo/mobile/header-mobile/header-mobile.png')
+      url('../photo/mobile/header-mobile/header-mobile.png');
     background-color: #c4c4c4;
   }
   
@@ -112,7 +112,7 @@
           var(--hero-overlay),
           var(--hero-overlay)
         ),
-        url('../photo/dekstop/header-dekstop/hero-dekstop.png')
+        url('../photo/dekstop/header-dekstop/hero-dekstop.png');
       background-color: #c4c4c4;
     }
   
@@ -135,8 +135,8 @@
           url('../photo/dekstop/header-dekstop/hero-dekstop@2x.png');
       }
     }
-  }
-  
+}
+
 .hero-bt {
     background-color: var(--focus-text-color);
     color: var(--secondary-text-color);
