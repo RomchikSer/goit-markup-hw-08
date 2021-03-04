@@ -477,14 +477,6 @@ img {
   background: var(--color-hero-button);
 }
 
-.uniqum-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .uniqum-list-item .item-uniq {
   width: 270px;
 }
@@ -498,7 +490,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -508,10 +500,6 @@ img {
   font-size: 14px;
   line-height: 1.7;
   margin: 0;
-}
-
-.section-uniq {
-  padding-bottom: 0;
 }
 
 .uniq-charakt {
@@ -532,6 +520,25 @@ img {
 .charakt-img {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .uniqum-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .uniqum-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-uniq {
+    padding-bottom: 0;
+  }
 }
 
 .work-list .work-item {
