@@ -1297,15 +1297,15 @@ img {
 }
 
 .modal-btn {
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
-  background: #ffffff;
+  background-color: var(--secondary-text-color);
   -webkit-box-shadow: var(--box-shaden-modal);
           box-shadow: var(--box-shaden-modal);
   border-radius: 4px;
@@ -1350,12 +1350,29 @@ img {
 .modal-btn-close:hover .modal-close-svg,
 .modal-btn-close:focus .modal-close-svg {
   fill: var(--focus-text-color);
+  outline: none;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-btn {
+    width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-btn {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .contacts-form {
@@ -1548,5 +1565,16 @@ img {
 
 .modal-form-button:focus, .modal-form-button:hover {
   background-color: var(--color-hero-button);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .modal-form-lable-policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 /*# sourceMappingURL=main.css.map */
