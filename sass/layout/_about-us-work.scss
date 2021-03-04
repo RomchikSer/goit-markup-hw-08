@@ -1,18 +1,26 @@
 .work-list .work-item {
     position: relative;
-    display: block;
+    display: none;
+      
 
     &:not(:last-child) {
         margin-right: 30px;
        }
 }
-.work-list {
- display: flex;
-}
-
-.title-work{
-    margin-bottom: 50px;
-}
+       @media screen and (min-width: 1200px) {
+        .work {
+          display: block;
+        }
+      
+        .work-list {
+          display: flex;
+        }
+      
+        .title-work {
+          margin-bottom: 50px;
+        }
+      }
+      
 .work-list .text_img {
     display: flex;
     align-items: center;
