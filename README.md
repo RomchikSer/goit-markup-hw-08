@@ -1,6 +1,6 @@
 # goit-markup-hw-08
 
-<!-- <!DOCTYPE html> 
+<!-- <!DOCTYPE html>  
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -734,4 +734,4 @@
     <script src="./js/menu.js"></script>
   </body>
 </html>/
- -->
+ 

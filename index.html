@@ -155,32 +155,66 @@
         </section>
 
         <!--work-->
-
+        
         <section class="work section">
           <div class="container">
             <h2 class="title title-work">Чем мы занимаемся</h2>
             <ul class="work-list">
                 <li class="work-item">
-                    <picture>
-                        <source srcset="./photo/dekstop/work-dekstop/klawa-dekstop.webp 1x,
-                        ./photo/dekstop/work-dekstop/klawa-dekstop@2x.webp 2x">
-                    </picture>
+                <picture>
+                    <source 
+                    srcset="
+                    ./photo/dekstop/work-dekstop/klawa-dekstop.webp 1x,
+                    ./photo/dekstop/work-dekstop/klawa-dekstop@2x.webp 2x" 
+                    media="(min-width: 1200px)" type="image/webp"
+                    />
+                    <source srcset="
+                    ./photo/dekstop/work-dekstop/klawa-dekstop.png 1x,
+                    ./photo/dekstop/work-dekstop/klawa-dekstop@2x.png 2x"
+                    media="(min-width: 1200px)" 
+                    />
+                    <img class="work-img" src="./photo/photo_index/img.png" alt="photo keyboard" >
+                </picture>
                     <p class="text_img">Десктопные приложения</p>
                 </li>
                 <li class="work-item">
-                    <img class="work-img" src="./photo/photo_index/img2.png" alt="laptop" 
-                    width="370" height="294" >
+                    <picture>
+                        <source srcset="
+                        ./photo/dekstop/work-dekstop/laptop-dekstop.webp 1x,
+                        ./photo/dekstop/work-dekstop/laptop-dekstop@2x-1.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp"
+                    />
+                    <source srcset="
+                        ./photo/dekstop/work-dekstop/laptop-dekstop.png 1x,
+                        ./photo/dekstop/work-dekstop/laptop-dekstop@2x-1.png 2x" 
+                        media="(min-width: 1200px)" 
+                    />
+                    <img class="work-img" src="./photo/photo_index/img2.png" alt="laptop" >
+                </picture>
                     <p class="text_img">Мобильные приложения</p>
                 </li>
                 <li class="work-item">
-                    <img class="work-img" src="./photo/photo_index/img3.png" alt="tablet" 
-                    width="370" height="294" >
+                    <picture>
+                        <source srcset="
+                        ./photo/dekstop/work-dekstop/tablet-dekstop.webp 1x,
+                        ./photo/dekstop/work-dekstop/tablet-dekstop@2x-2.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp"
+                    />
+                    <source srcset="
+                        ./photo/dekstop/work-dekstop/tablet-dekstop.png 1x,
+                        ./photo/dekstop/work-dekstop/tablet-dekstop@2x-2.png 2x" 
+                        media="(min-width: 1200px)" 
+                    />
+                    <img class="work-img" src="./photo/photo_index/img3.png" alt="tablet" >
+                </picture>
                     <p class="text_img">Дизайнерские решения</p>
                 </li>
             </ul>
           </div>
         </section>
+
         <!--team-->
+        
         <section class="team section">
         <div class="container">
                 <h2 class="title title-team">Наша команда</h2>
