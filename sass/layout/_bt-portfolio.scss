@@ -27,11 +27,23 @@
 
 .portfolio-filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 .filter-list{
     .portfolio-filter &:not(:last-child) {
         margin-right: 8px;
     }
 }
+@media screen and (min-width: 768px) {
+    .portfolio-filter {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .portfolio-filter {
+      margin-bottom: 50px;
+    }
+  }
