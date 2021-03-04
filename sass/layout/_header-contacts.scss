@@ -126,7 +126,7 @@
         margin-bottom: 40px;
       }
     }
-  
+ 
     .menu-burger-list {
       display: flex;
       flex-direction: column;
@@ -231,13 +231,7 @@
         bottom: 0px;
       }
     }
-  .social-nav {
-    display: flex;
   
-    &.social-list:not(:last-child) {
-      margin-right: 20px;
-  }
-}
     .header-contacts {
       margin-left: auto;
     }
