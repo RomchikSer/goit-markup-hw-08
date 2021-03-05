@@ -1,0 +1,23 @@
+.button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 30px;
+    min-width: 200px;
+    height: 50px;
+    cursor: pointer;
+    align-self: center;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    font-family: inherit;
+    letter-spacing: 0.06em;
+  
+    &:active {
+      outline: none;
+    }
+  }

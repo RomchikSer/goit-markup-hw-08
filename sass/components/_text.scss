@@ -1,0 +1,23 @@
+.text {
+    .services-list & {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        margin: 0;
+        width: 100%;
+        min-height: 70px;
+      
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        text-transform: uppercase;
+      
+        color: var(--primary-white-color);
+        background-color: var(--wwd-bgc-text);
+      
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+}
