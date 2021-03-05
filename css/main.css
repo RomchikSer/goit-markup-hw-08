@@ -1492,7 +1492,7 @@ img {
 }
 
 .modal-form-check-policy:checked + .modal-form-label-policy::before {
-  background-image: url(../images/icon-check.svg);
+  background-image: url("../photo/photo_icon/icon_check.svg");
   outline: none;
 }
 
