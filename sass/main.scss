@@ -1,25 +1,43 @@
 // UTILS
-@import "./utils/variables";
-@import "./utils/visually-hiden";
+@import './utils/variables';
+@import './utils/visually-hidden';
 // BASE
-@import "./base/common";
-@import "./base/container";
-@import "./base/section";
-
+@import './base/common';
+@import './base/container';
 // COMPONENTS
-@import "./components/title";
-@import "./components/logo";
-
-// layout
-@import "./layout/nav-web";
-@import "./layout/header-contacts";
-@import "./layout/hero";
-@import "./layout/about-us-uniqum";
-@import "./layout/about-us-work";
-@import "./layout/about-us-team";
-@import "./layout/about-us-client";
-@import "./layout/footer";
-@import "./layout/backdrop";
+@import './components/link';
+@import './components/list';
+@import './components/section';
+@import './components/title';
+@import './components/sub-title';
+@import './components/_modal-button';
+@import './components/item';
+@import './components/text';
+@import './components/footer-modal-input';
+// Header
+@import './layout/logo';
+@import './layout/header';
+// HERO
+@import './layout/hero';
+// FEATURES
+@import './layout/features';
+// SERVICES
+@import './layout/services';
+// TEAME
+@import './layout/team';
+// CLIENTS
+@import './layout/clients';
+// FOOTER
+@import './layout/footer';
+// PORTFOLIO
+@import './layout/portfolio-section';
+@import './layout/portfolio-header';
+@import './layout/portfolio-filters';
+@import './layout/portfolio-items';
+// BACKDROP
+@import './layout/backdrop';
+@import './layout/modal-window';
+@import './layout/modal-form';
 
 
 

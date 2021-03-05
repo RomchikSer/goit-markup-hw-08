@@ -1,0 +1,17 @@
+.services-section {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .services-section {
+      display: block;
+    }
+  
+    .services-list {
+      display: flex;
+    }
+  
+    .services-title {
+      margin-bottom: 50px;
+    }
+  }

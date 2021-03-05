@@ -1,0 +1,36 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}
+
+.header-logo {
+  color: var(--logo-color);
+}
+
+.web-logo {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  padding: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+
+  color: var(--primary-white-color);
+}

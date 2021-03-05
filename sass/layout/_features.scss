@@ -1,0 +1,42 @@
+.features-decoration {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .features-title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .features-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  
+  .thumb-features {
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--second-bgc);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .features-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .features-title {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .features-section {
+      padding-bottom: 0;
+    }
+  }
