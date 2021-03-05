@@ -1,6 +1,6 @@
 // UTILS
 @import './utils/variables';
-@import './utils/visually-hidden';
+@import './utils/visually-hiden';
 // BASE
 @import './base/common';
 @import './base/container';
@@ -10,7 +10,7 @@
 @import './components/section';
 @import './components/title';
 @import './components/sub-title';
-@import './components/_modal-button';
+@import './components/modal-button';
 @import './components/item';
 @import './components/text';
 @import './components/footer-modal-input';
@@ -36,7 +36,7 @@
 @import './layout/portfolio-items';
 // BACKDROP
 @import './layout/backdrop';
-@import './layout/modal-window';
+@import './layout/modal-wondow';
 @import './layout/modal-form';
 
 
