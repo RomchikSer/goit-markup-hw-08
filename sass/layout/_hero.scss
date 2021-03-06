@@ -47,7 +47,7 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 100%;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -101,11 +101,17 @@
       }
     }
   }
-  
   @media screen and (min-width: 1200px) {
+    .hero-title {
+      font-size: 44px;
+      line-height: 1.364;
+      max-width: 696px;
+      max-height: 120px;
+    }
+  
     .hero {
       padding: 200px 0px;
-      max-width: 1600px;
+      max-width: 100%;
   
       background-image: linear-gradient(
           to right,
@@ -113,41 +119,20 @@
           var(--hero-overlay)
         ),
         url('../photo/dekstop/header-dekstop/hero-dekstop.png');
-      background-color: #c4c4c4;
+          background-color: #c4c4c4;
+    }
+
+   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+         screen and (min-resolution: 192dpi) and (min-width: 1200px),
+         screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url('../photo/dekstop/header-dekstop/hero-dekstop@2x.png');
+      }
     }
   }
   
-    @media screen and (min-width: 1200px) {
-      .hero-title {
-        font-size: 44px;
-        line-height: 1.364;
-        max-width: 696px;
-        max-height: 120px;
-      }
-
-      .hero {
-        padding: 200px 0px;
-        max-width: 100%;
-    
-      background-image: linear-gradient(
-        to right,
-        var(--hero-overlay),
-        var(--hero-overlay)
-      ),
-      url('../photo/dekstop/header-dekstop/hero-dekstop.png');
-      background-color: #c4c4c4;
-    }
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      .hero {
-        background-image: linear-gradient(
-            to right,
-            var(--hero-overlay),
-            var(--hero-overlay)
-          ),
-          url('../photo/dekstop/header-dekstop/hero-dekstop@2x.png');
-      }
-    }
-}
