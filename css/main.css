@@ -689,7 +689,6 @@ img {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -708,7 +707,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-color: #c4c4c4;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../photo/tablet/header-tablet/header-tablet.png");
     background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../photo/tablet/header-tablet/header-tablet.png");
@@ -730,8 +728,9 @@ img {
     max-height: 120px;
   }
   .hero {
-    padding: 200px 0px;
-    max-width: 100%;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-overlay)), to(var(--hero-overlay))), url("../photo/dekstop/header-dekstop/hero-dekstop.png");
     background-image: linear-gradient(to right, var(--hero-overlay), var(--hero-overlay)), url("../photo/dekstop/header-dekstop/hero-dekstop.png");
     background-color: #c4c4c4;
